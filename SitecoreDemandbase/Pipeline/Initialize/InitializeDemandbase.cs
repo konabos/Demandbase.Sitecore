@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Xml;
-using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -14,8 +9,6 @@ using Sitecore.Data.Managers;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines;
 using Sitecore.SecurityModel;
-using Sitecore.StringExtensions;
-using SitecoreDemandbase.Data;
 using SitecoreDemandbase.Data.Interface;
 
 namespace SitecoreDemandbase.Pipeline.Initialize

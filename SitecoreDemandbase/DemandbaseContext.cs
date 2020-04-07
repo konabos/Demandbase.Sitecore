@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Sitecore;
-using Sitecore.Layouts;
 using SitecoreDemandbase.Data;
 using SitecoreDemandbase.Data.Interface;
 using SitecoreDemandbase.Pipeline.HttpRequestBegin;

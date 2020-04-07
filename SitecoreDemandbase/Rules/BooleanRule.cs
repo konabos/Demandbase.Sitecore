@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using Sitecore;
+﻿using Sitecore;
 using Sitecore.Data;
-using Sitecore.Data.Items;
 using Sitecore.Data.Managers;
 using Sitecore.Rules;
 using Sitecore.Rules.Conditions;

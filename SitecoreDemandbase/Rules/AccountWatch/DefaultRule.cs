@@ -1,7 +1,4 @@
-﻿using Sitecore;
-using Sitecore.Data;
-using Sitecore.Data.Items;
-using Sitecore.Rules;
+﻿using Sitecore.Rules;
 using Sitecore.Rules.Conditions;
 
 namespace SitecoreDemandbase.Rules.AccountWatch

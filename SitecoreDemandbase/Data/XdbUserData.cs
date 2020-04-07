@@ -1,19 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Dynamic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Web;
 using Sitecore.Analytics;
 using Sitecore.Diagnostics;
 using SitecoreDemandbase.Data.Interface;
 using SitecoreDemandbase.Pipeline.HttpRequestBegin;
-using TokenManager;
 
 namespace SitecoreDemandbase.Data
 {

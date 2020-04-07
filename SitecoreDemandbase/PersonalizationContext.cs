@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Sitecore;
 using Sitecore.Data;
 using Sitecore.Diagnostics;
 using Sitecore.Layouts;
 using Sitecore.Rules;
 using Sitecore.Rules.ConditionalRenderings;
-using Sitecore.Web.UI.WebControls;
 
 namespace SitecoreDemandbase
 {

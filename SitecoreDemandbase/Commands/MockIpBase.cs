@@ -1,15 +1,6 @@
-﻿using System;
-using System.Web;
+﻿using System.Web;
 using System.Web.UI;
-using Sitecore.Collections;
-using Sitecore.Data.Items;
-using Sitecore.Diagnostics;
 using Sitecore.ExperienceEditor.Speak.Ribbon;
-using Sitecore.Shell.Framework.Commands;
-using Sitecore.Shell.Web.UI.WebControls;
-using Sitecore.Web;
-using Sitecore.Web.UI.Sheer;
-using Sitecore.Web.UI.WebControls.Ribbons;
 
 namespace SitecoreDemandbase.Commands
 {

@@ -76,9 +76,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TokenManager, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\TokenManager.Core.2.4.0\lib\net452\TokenManager.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="TokenManager, Version=2.6.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TokenManager.Core.2.6.6\lib\net452\TokenManager.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

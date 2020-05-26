@@ -1,0 +1,22 @@
+﻿---
+ID: "b0e3bb19-1339-4827-8038-fae3ed43a27d"
+Parent: "03823391-95ef-4156-b361-377152c06522"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: WordProcessing/32x32/delete_row_h.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161011T140528Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

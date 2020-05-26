@@ -1,0 +1,21 @@
+﻿---
+ID: "7de7dbda-2170-51c3-89f9-3d8284b8eb4f"
+Parent: "d67c00c2-75a6-48b5-9ddb-769e6f6bedfe"
+Template: "009fc399-7977-44b2-b2ab-827ac1b64af0"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200415T154520Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "aa215110-2fab-461b-9685-51f9678378e8"
+      Hint: Attribute Id
+      Value: audience_segment

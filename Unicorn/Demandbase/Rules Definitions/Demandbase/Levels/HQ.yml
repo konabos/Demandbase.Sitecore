@@ -1,0 +1,25 @@
+﻿---
+ID: "32e3f5f8-638b-4442-9f30-7758f08db41e"
+Parent: "27d81862-4bc5-4ee7-ae05-d0da7eed4d47"
+Template: "0117897e-28d7-4932-9402-6b71175cef11"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Levels/HQ
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: HQ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20161115T151219:636148195396077822Z"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "d8477e99-1ab3-4aeb-828f-2de82faa17ca"
+      Hint: Value
+      Value: hq

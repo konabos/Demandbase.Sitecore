@@ -1,0 +1,424 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Demandbase Module for Sitecore</PackageName>
+      <Author>Demandbase, Inc.</Author>
+      <Version>2.0.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>Before starting, be sure your Demandbase subscription is current and have its API key ready.
+ 
+1.	Run installation procedure:
+ 
+There are no Sitecore items involved in the module package. The entirety of the module is self-contained through initialise pipeline procedures. This means if something is accidentally deleted it can be easily repaired with a simple recycle of the app pool.
+ 
+2.	Configure the module:
+ 
+Installing the module will place a configuration file in Sitecore at App_Config/Include called Demandbase.config. 
+Inside this config is an XML node. Enter your Demandbase API access key into this node and save. This will recycle the app pool as well.
+</Readme>
+      <Publisher>Demandbase Inc.</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Demandbase.config</x-item>
+        <x-item>/bin/SitecoreDemandbase.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Experience/Demandbase/{B52A6C76-6058-4B30-8891-F926B47CA72D}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Experience/Demandbase/Mock Ip/{59D4BC37-C6A4-4916-93AF-87F746149C33}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/{4C122D32-C4FC-46FC-8A36-0F74874963F0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/{99266AAB-BD0B-423B-AE52-2F49F694873A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Attribute/{8457FE74-B99C-4148-9A80-05358875778F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Attribute/Data/{286882B1-2F93-4EE4-8D48-DEF8018E3D0E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Attribute/Data/Id/{EDFBDE22-35F3-4938-8985-0D063E31BE1A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Attribute/Data/Name/{F1D62003-F432-40AD-AF13-FBD061299432}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Demandbase Token/{C02FFFEC-E71D-4522-8EBA-DCDAC7D52126}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value List/{009FC399-7977-44B2-B2AB-827AC1B64AF0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value List/Data/{4BA3B486-F5E6-47B8-BB0E-57F21CB0D336}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value List/Data/Attribute Id/{AA215110-2FAB-461B-9685-51F9678378E8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value List/Data/Attribute/{88F932AB-02DA-460E-9462-1A76533368AB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value/{0117897E-28D7-4932-9402-6B71175CEF11}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value/Data/{632329AF-C90E-4D50-ADCF-9F8DABA23CA0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Demandbase/Templates/Value/Data/Value/{D8477E99-1AB3-4AEB-828F-2DE82FAA17CA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/{03823391-95EF-4156-B361-377152C06522}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/{00074906-7866-47B2-8057-FB155DCE5CA6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/{F66D05A5-0432-46C3-8909-44EC80709CEB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/Bool/{73B33F01-9F02-437B-8175-EC4DA8342E17}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/Int/{640DD776-D420-4360-ADE0-D2D36C78F7DE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/String/{78A98E78-0215-4031-A016-F275A8BCC123}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/String/Account Owner/{04D4BA01-06FF-57A1-89AC-7B4BD58E1F87}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/String/Account Status/{9C495D79-81CA-5D13-B000-027C0E025701}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/String/Account Type/{8D730323-D3FD-5DF7-8943-CD17699D0A52}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/String/Ad Campaign Code/{24E7619A-17F1-5695-AB3C-714CB090ABC2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Default Values/{79B52C93-5D65-435B-A0A3-08477B88E76F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/{B0E3BB19-1339-4827-8038-FAE3ED43A27D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Bool/{42D77CBC-F012-4669-98F6-188B6C0C1E67}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Bool/B2B/{B8BD09B4-C869-5DED-B32B-B52AB0EB2478}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Bool/B2C/{16CA314C-53C0-5D5A-9BA9-2DC69C5FD8E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Bool/Forbes 2000/{99DA3C14-117C-5F40-8559-EA3B2A561207}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Bool/Fortune 1000/{CCEEA6EF-91AC-5AA8-905F-65CBE87926EB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Bool/ISP/{8FCE8BB4-D834-595E-A6DF-C06AFB68AAEA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Int/{E0CBAD14-DE85-45C7-ACFC-DB1716B0BB22}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Int/Annual Revenue/{93B342A1-4136-58A3-9C9F-511475FAB32D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Int/Demandbase SID/{CA70CB53-B964-511A-A0EE-EA3002B88C7D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Int/Employee Count/{8AA9CA22-4F4E-501C-8B43-50878831B5E1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Int/Latitude/{92E9F212-D205-5AFE-BB11-1F066E6F876C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/Int/Longitude/{6723CEE8-5700-57EE-9E12-E46ED271977E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/{6903150E-B8D5-4298-A75E-3D4C3B05EB36}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/City/{A61E08EA-6A79-5900-865F-88A9C5945BB1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Company Name/{F5E2191F-6697-54C1-A2F6-86504842F7BA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Country Code/{62609B99-1012-5E7B-BA14-96E6F8A7A54C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Country Name/{80DB1B38-DF93-5AFF-99D8-69045A5E9E8A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Employee Band/{FB6BCB59-5FC1-5256-8C37-FD24310BE582}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Industry/{53B32106-1CB5-51CE-9633-1DB454B3CB0F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/IP Address/{2C80F66D-42FC-5C22-8634-B3A4F742EBFD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Marketing Alias/{E17F7EE9-2C3D-50AC-841E-10B9D78631D0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Primary NAICS Code/{2A82EDEC-398A-5282-9569-54BC390728C0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Primary SIC Code/{135C2B83-71FE-5AFF-8A51-8940CB7F8D0C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Revenue Band/{826C8FDF-11D4-58ED-9C81-C02EDB8CB287}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/State/{16CF92AE-0AE3-5BAF-BD85-EDE859C31C5F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Stock Ticker/{D0FED820-D189-5758-865B-9147FD0735C0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Sub Industry/{1E0F505C-C208-565B-A098-EDD8E08C9CD6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/Website/{9BE5BB30-7B8D-5027-94E6-9C27718FB50A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/ZipPostal Code/{D6186468-B547-5C58-AD02-DC4D9E1598C9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/{D67C00C2-75A6-48B5-9DDB-769E6F6BEDFE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/{7DE7DBDA-2170-51C3-89F9-3D8284B8EB4F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Administration/{C9B5FFCA-B37F-516F-94FD-CD53A429E8C3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/City  Local/{C1209A91-9160-59E2-BC35-B0D0EEA7E180}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Educational Services/{FB76BB81-E3A2-5AC4-A816-A77AA0AFFEB5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Federal/{C46756DF-BEDE-5B75-A2F5-91DB517072E0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Hotspot/{5D9D31A1-FDE4-5A0B-BCAC-7CB246C6A7B8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/International/{38C58939-6678-5F1E-9506-C4ED895FE6F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/K12/{6926C9F2-D371-5D33-9D0C-833B7C453BC9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Lodging/{A52DD691-24D1-5646-BEDD-028C78D5E49C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Military/{4B537DF0-73A1-5949-A242-198585E01847}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Mobile Network/{06F68006-7F9A-53DA-B157-55DC95CB6C7E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Public Safety/{43B98EC9-CE34-5484-93FD-0A736DBBB166}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/State/{8C028B11-13F5-5C0E-9BC0-A53A8E3E0FF4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/University/{E721F9B6-661E-5498-965D-BD97C7709993}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience Segment/Vocational/{09D93FC7-C025-5B1B-BE41-51D4D3278385}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/{9725C338-A0A7-5E10-9B67-5A29CA888B8B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Bot/{10DD87CA-3B72-5DFA-8EA5-8C3DEF60C8B2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Education/{F2EBF006-ACAB-5853-AEF2-8CF475360FC2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Enterprise Business/{B18A65A7-A4B4-5ABB-9843-925F210E92E7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Government/{888A0B4E-677E-5018-AA5A-2061C76CB2E0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Hospitality/{1FFEC2C4-91D2-57C7-9E03-E4367E201613}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Mid-Market Business/{3EF69C2D-A566-54D2-B882-C67C6C27D13D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Obscured/{0D6B9AE1-2023-5B6E-B01C-49CB5E8A18E7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Residential/{5C5B4E51-0917-5574-896A-E8D3B0A7447D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/SMB/{752AC547-386D-52D5-95E4-77E610C6BE3F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/SOHO/{3586C965-22A6-5C8A-A87F-DC23D085E0FC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Audience/Wireless/{F1732C9A-E65E-52CD-9095-B18501550F61}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Employee Band/{D07F5169-2FCF-57F0-9059-5D813981D951}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Employee Band/Enterprise/{6110FA7E-591A-5BAF-952E-06C2E60012AC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Employee Band/Mid-Market/{FA083EC5-7B59-5A3A-A171-120C2AF2BA9F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Employee Band/Small/{B65A739E-290B-5202-85A5-C1955076B49A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Employee Band/Unknown/{B61DD1E1-ED0C-5D55-A28D-5FABB188D58A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/{A9FB8F25-9D91-5EF8-9491-E7159DB7CA50}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Aerospace  Defense/{F59B6A60-009C-568E-93BD-6EEC52BB09BD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Agriculture/{8FBC98D3-B3F4-59D5-9D79-DD7A67F88CD4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Apparel/{37C26EE2-221B-5AE3-AD9E-AC7A60DC94D7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Associations/{6440983A-AF03-50FC-960B-017E0B4DE044}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Automotive/{3B3CC888-28F6-5D7B-8F58-01709886BCE8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Biotech/{91C47A5C-01B6-5F03-9E82-6FAA277361F7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Business Services/{42138546-7728-5C95-BA33-02AD690A677F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Construction/{6BEFF58E-7FCE-596F-86E2-B7FA7D31F840}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Consumer Goods  Services/{F47394F9-2CD1-5717-93D3-35369D40785C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Education/{4DA8C975-7B6F-548F-AC82-A2A633EA0BCE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Energy  Utilities/{A84A1DEB-89B3-5D2A-8A04-76CD7A22E9A6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Financial Services/{4716EE1D-31E0-5861-8C67-2FBD9B23C5F0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Food  Beverage/{3555273A-D63B-587A-9033-A2A97D3686E6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Furniture/{D8CD46AD-03B1-59F7-A1B6-38E997515298}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Government/{73E37409-839E-512D-9A0C-6E2543A2CDBE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Hardware/{16E891E3-26E9-5814-A11C-CC93757DE5B7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Healthcare  Medical/{6BCA661F-6FA0-5806-9EEA-30B4A447E7AF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Home  Garden/{5FC8F6EC-6825-5AD7-8FC9-4BC2DCBF1E9B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Hospitality  Travel/{9B42EDBE-544E-5E22-9948-11CEE9CB6334}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Manufacturing/{0EFF36DD-DF9B-5410-9E43-03293E59F0B5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Media  Entertainment/{BDD83C71-9D69-558E-AD90-39909FB030C8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Mining/{3CC85442-2ACF-5BBB-B4E4-AE82DEE70971}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Pharmaceuticals/{EBEA405B-2F5A-5360-8DBF-74623D29540E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Printing  Publishing/{A4357142-FB1C-5980-86AF-07F4FD60616A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Real Estate/{3C3BC01F-D464-5569-A817-287026AEEEA8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Recreation/{DB5D0D07-4F25-588A-9DC1-C4198AB91DD0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Retail  Distribution/{BC8CBECB-475D-5B8A-BC7A-87A44D288A33}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Software  Technology/{7F16918D-C37B-5385-ABDC-DB6F5A6FA73E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Telecommunications/{385B63E6-0DEE-5DEB-BFCC-C850E0739A54}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Textiles/{F7DD87A4-A4AC-58CB-B27F-96A9C0B4BFB4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Transportation  Logistics/{B166D290-DEB9-5304-8FAB-7F093E755A6E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Unclassified/{6D122770-C5FC-55E4-AA4D-2B2119407780}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$1 - $1M/{E327D23F-B3E4-5EE4-BF9B-6C8323168F3F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$100M - $250M/{EA489146-85A1-516E-B81E-84A832C42A74}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$10M - $25M/{0C64478F-162B-55AD-8E85-9195CCADDEFF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$1M - $5M/{D9F874E0-37A3-582B-B180-30CED583DA1D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$250M - $500M/{8AA838D6-2846-5689-8A39-A7D057DAA8D8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$25M - $50M/{396F6D76-4B7B-58C5-B81A-246B6CA88304}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$500M - $1B/{64A961B9-471A-5F7E-8B83-7C6D5D242496}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$50M - $100M/{7C9ABCFA-189C-5C42-946A-007D15D71002}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/$5M - $10M/{79DB92E5-DC48-559C-94E3-EE8E925FB0D8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/{BED080D2-79E0-555C-98F9-1D3E1E6CC95A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/1B  25B/{346C7DD7-20A8-5D94-ADAC-9EE7C7700E0B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/25B  5B/{B0FA8A97-4D79-569A-B06A-1A02923A2EA1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/Over $5B/{3CDCBE30-1605-53F3-9A74-45E13F9DDE5F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Revenue Band/Unknown/{0F7CB6BF-E9FA-5B3F-91E9-C22DE92B45E8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/{BF3C45AF-7131-5ABC-968E-89F6024D5931}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Accessories/{6730AFAA-74DE-5344-B195-297B92B6FF42}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Accounting/{F173E3DF-CB0A-5107-B114-7EE05A035715}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Adhesives  Sealants/{D2AFA107-B7CE-5195-A289-FF4A809EF9C0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Administration/{C683430F-B717-5C91-B1AB-843679AF3833}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Agents  Brokerage/{32535D4A-08D7-550D-870A-25FA4FB2A48F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Air Services/{4ADEE859-976F-5C27-9B1C-8103547CA580}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Aircraft/{7EC687CF-8A6B-58A0-9F92-589A043B2B08}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Animal Food/{15F13524-A8B3-5E04-A186-C4860907930C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Appliances/{53756574-4117-5754-97AD-77691BEC24A8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Architectural/{374813B8-2E51-56EB-8315-32E50533963D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Art  Galleries/{093ACCA1-1175-55C3-8F4C-C94E115EE757}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Baked Goods/{ACFA64BC-1F5A-5D8C-836C-71713414F4A6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Banking  Finance/{7777EEDD-0CEE-58A9-97A9-0B0935ACD42D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Bars  Restaurants/{36AAC179-585D-5E12-A10F-1B8286C01E80}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Beverages/{46F004D9-60B0-5694-92A1-1399D05EDE83}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Boating/{E59FDB0C-761B-5A42-9DCD-C9F40B79C21A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Book Stores/{C825ABCA-A721-5EB2-8C7D-6D264FAD9559}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Cable  Television/{BFCBC527-6A0E-5F34-8E97-B378DA5357B8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Chemicals/{8CCD5B72-6D31-5E0A-864D-D2822CB32BE1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Civil Construction/{FDA7DECB-8856-524E-A559-9F06929D1B12}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Clerical/{017F4318-0A25-5896-A5AE-CD4F5CF27597}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Clinical/{A1784746-E04E-51CE-AD86-D274CD59B32B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Clothing/{8ED49BCF-C777-5AAA-81A2-FED219A0050F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Coffee  Tea/{AD7C4799-45EB-51D4-89DC-9F527570511D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Commercial/{F1899CFF-51E5-55EA-9556-C0D295E02C7C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Computer  Mobile Devices/{1380EE7C-39EE-5F7D-8A1D-24E1518EEFCE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Confections/{9AE317CB-9681-5A6E-A384-61A0FD2EA5B8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Contractors/{A60D55AA-677E-5067-9CD2-2D1827B8F67F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Dairy/{1BBF7389-5BA7-52C4-BEED-D0780BB4C5E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Data  Technical Services/{71B5B0AE-2B99-5B2F-A45B-CEE52CC088F5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Dealers/{05A494AD-BB11-55A2-BEDE-9C881841CE36}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Defense Systems/{060B9BB7-9E62-57AF-AD65-D19BB1673110}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Department Stores/{83DD06EB-555E-515A-A90C-A601DC6F2BF0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Developers/{AF6F0A79-C2C2-579A-8E67-CCFB14B12CC2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Distribution/{10EBDFEB-9958-5D13-9A21-62B9D0C8199C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Educational Services/{B8CF233A-F425-57D6-AC68-57BD644559EB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Electric Services/{BF3011A7-A123-5473-8BAE-FB4AB7E45C64}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Electrical Components/{3A6D9C93-CD8D-5478-A31F-C3B41C4F6052}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Electronics/{1D75D13A-C0C7-5C04-A6F7-3AA9120C530C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Employment/{4DDD4560-0D64-5F12-96BC-5916133AAD9C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Engines  Motors/{974748FF-529F-5687-BEF1-FBC2C31E1018}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Entertainers/{607F14CA-3976-59A9-AB46-70FABB044C53}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Equipment  Services/{62001B7B-22D6-58FC-AA46-8543CCD177FB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Equipment/{3AF4817D-4F2E-5A88-8413-53E9F80E0146}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Exploration/{2084AD3A-3713-5E3B-A9D8-C780215AB273}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Facilities/{83C0D948-5B3B-555F-9D05-7F25C28EF1EC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Farming/{A8245506-D40B-5E4F-B18E-847D1E054875}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Fasteners/{E731738C-992D-5F0A-B70D-2ED192CD996D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Fertilizers/{F76FB695-4543-5C47-8487-4130A9C8602F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Fibers/{9F7B9A6E-4CAC-5222-9FA8-62E18E7C10DD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Firearms/{3FC8CA74-0650-5EAC-BC24-613F37FBE726}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Fish  Game/{712460A2-40E9-5CFD-BC83-5CF3262472C3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Fixtures/{E5F82E01-0B5B-527B-B365-876995D59828}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Footwear/{3CCD5CE2-CD36-5F5A-9730-511012476FB9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Forestry/{DFD13594-C280-5047-B45A-0672AD92E3FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Fruits  Vegetables/{C8A64838-68E8-5C54-8D3B-0ABA56338769}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Funeral Products/{1D822784-708B-5C96-8517-5D0F00A8F70C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/General Interest/{5000C826-0FD2-5C47-A9D8-6074AAFECCD0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/General Merchandise/{7A8BCCF2-314F-57D2-B8B5-D36BCA0B6504}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/General/{310AC48A-EDDB-5B3F-81A2-F752BF32E9D2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Glass Products/{A1715E05-06B1-59C6-80A5-AD528E2F1406}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Grains/{92747417-2F05-577C-8313-D88BD7CB173C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Grocery/{02C6B6F8-1457-587D-BDDA-081214F681F8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Home Furnishings/{3E3CF980-344B-57FB-8526-77E9756557FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Household Products/{9DFAABBE-E820-5327-962F-D2732F4C42C8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Household/{84AE3D95-8A03-548C-A836-807582AE1F54}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Housewares/{9D210636-F337-52E2-9570-E239D71B859B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Imaging  Optics/{C901ECDC-B24C-5B46-B58C-139000737E59}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Industrial Equipment/{F9A147FE-C9A3-53BD-A8F2-F5D7812A8D08}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Industrial Supplies/{D34FE6EB-6D0E-50E5-81A4-DC694CC5E381}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Industrial/{2EFCBAB9-ACAD-5187-996E-FBDFF35489D7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Ingredients/{685A18BD-4DE0-5962-8412-F2D094FFFB5B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Instruments/{A56F762B-9BA9-554E-8FE1-13AABD61B5E4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Insurance/{F1FB0106-C1EE-5685-9581-8EB1FE861AA0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/International/{B4E84737-0B73-5CA0-9FAE-CA9B4AE1F1DD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Investment Services/{364BBE2A-85A2-52D9-B8C8-3640026A9D6F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Jewelry/{EBC597DD-9B87-5451-9296-2068CCE5950F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Judicial/{1DA64AA2-9B20-5467-B38E-3CE3853D275C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/K12/{9014C8BA-F133-545E-9A6D-10E17865D7DF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Laboratories/{BD9B4D2C-2675-5852-884E-3594AB5FD332}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Landscaping/{6BB68892-782A-543A-8EEB-FA04438F5669}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Laundry Services/{F824BE7B-9111-5EDB-9C40-3DD082A559CC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Legal/{2E4BC437-96B9-5707-93DC-D1EB8DAA4F06}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Lighting/{35753798-E557-5AC0-AA40-68F7AD56841A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Livestock/{06C3C44D-F834-5D13-80D0-165C1FCF4B67}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Local Transit/{F5757C01-626D-59E8-B555-3F09859D835F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Lodging/{FC803BF7-1127-549A-8CCB-CBCEDF648306}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Lumber Products/{2584FF41-C29B-5EC9-95AA-670E06080807}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Machinery/{83A37A16-8BC6-5C0E-8B5D-F5E1B5C23A68}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Maintenance/{447E1342-3E46-5B2C-8934-A094648712A0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Management Consulting/{52B7DFD1-D683-5E51-90C4-533B2AAE27FA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Manufacturers/{3D4A8558-A3BE-5208-B50B-15B8F87DBECB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Manufacturing/{8A13E0E3-DBE1-5326-90D9-4358A214BEA3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Marine/{F6B96337-8AC3-5DB0-9C3C-0F39AA4BDE71}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Marketing Services/{C6CC06B7-66F1-5480-B5ED-69282BE8CEF4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Materials/{795E7036-0D8C-50F6-B5D2-778CA52EE479}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Meats/{63234021-F6B0-58FC-BDD3-B65C6884E0E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Media  Storage/{91B94693-9F8F-59BE-ABCE-CDE8D18C2AE8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Medicinal Chemicals/{5A116808-66E1-5A78-B272-445E149BA38C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Metal Fabrication/{66D8C448-B824-537F-B705-EAB453826084}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Metal Products/{E34152D7-0BD0-57DC-81BC-C28A14C87F1B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Metals/{EC8166C3-652C-57CC-8A59-B249B04DD573}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Mines/{397CCBFA-B22C-5F12-AD4C-A5DAFEFE4409}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Mobile Homes/{14F913A8-A2F2-543C-8790-B9BEBD140BBF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Motorcycles  Bicycles/{BCD21CA5-F432-5A0F-A30A-886D8EE90E56}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Natural Gas/{18839EA5-0D6C-5F48-A258-4E7779AC8B3B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Nuts  Seeds/{3E189210-A93E-5635-8CC0-359DCA182697}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Office Supplies/{A38E2848-067D-5980-827C-9782BE332B96}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Office/{AD605E68-1814-5A81-B84B-3D042F767060}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Paper  Packaging/{E2FF0357-1865-580E-8409-EA82637CA2E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Paper Products/{178BF31A-0A42-5321-AE13-C0D2745FA6F1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Parks  Facilities/{99712A6F-5E0C-52E1-8A6C-C7F1D0050ABD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Parts  Supplies/{65497B5E-A2BD-5C55-9C52-B62873D07AE2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Personal Care/{A63BC325-2404-5C79-AB2F-88CA477806BB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Petroleum/{55C4D352-31F2-5B2E-88D1-9EC08E6D4551}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Pharmacies/{E5374870-F4C0-500A-B090-E43B089BA6A4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Photography/{17BD1252-2A10-5FC3-B32C-53F46826917B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Plastic Products/{25B50616-3234-5EF2-B54A-FE00FBE81E28}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Plastic Resin/{A4A0B3C7-468B-5F50-8270-7F50617F8505}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Political/{47395D5D-ACC1-5A8D-9D78-273C64A1FB76}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Printed Products/{CF1BC825-923E-5620-83C8-955FA1C29E83}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Printing Services/{CAA05109-8694-5F3E-BE5F-9FAA58FEF5A6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Production Services/{4C6756F7-A11A-5634-810D-B135D6B92196}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Products  Wholesale/{DA66BEA4-E7CF-581C-BE6B-43FC9F74DBDE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Professional/{7BA735BE-68A2-535A-B248-CD0E3C95F781}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Property Management/{4E746E96-51A5-521F-9C9E-4EC798685630}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Providers/{9501EBC7-F66A-55F5-AC20-A3001BB6AE0F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Public Safety/{C7DD15E3-C778-5105-8A91-B3E939542AF1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Publisher/{35C61772-5DDE-567F-9DDD-56F4335B7AEE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Radio/{2B8BBA69-B7C0-5BE1-B53A-0D9B2363EC24}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Rail/{289AF161-D04A-5328-8F6F-FDD720220F72}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Recycle/{1F5334DB-DC1B-58B2-9416-E90660B32CA5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Refining/{AD6AC8CB-BC94-5622-8F75-3C3FECEA0BCD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Religious/{6D8569BC-FB55-5C1D-800B-6D35320AC988}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Rental  Leasing/{FF8DF26F-218E-549C-AA5A-DB2608859D6E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Research/{EA72EB92-F0F0-500B-8A7F-E4C403E18E39}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Residential/{B1F2F964-3FBE-5D5A-AA9A-1366FF1DF0A5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Retail Stores/{6615DC16-E591-50A4-B2CB-15E2ADF3B6C6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Retail/{E44D6626-81BF-5C9A-BE70-7F836BF9F5F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Sanitation/{8BC231C4-C526-54CE-82ED-E132C3271E0F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Seafood/{CC136F6A-F9C2-5C89-89D8-5972AC06324B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Security/{AAA77462-7486-5F97-817D-DA67223D54DD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Semiconductor/{801EEAC7-CCE5-5335-B4D5-C1630D790F58}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Services/{8461B3BC-8CDC-5ACF-AC72-808B8BD88F2A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Ship Building/{8F59E41E-E8E2-5C8C-BD1D-E90240B913A0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Social Services/{24E4457A-2E1E-5840-9698-DC4217F43E87}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Software Applications/{B668ED80-D6CB-58E5-B8FF-E081DC652A28}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Space/{14AACB41-F55D-5C38-83FD-2ACA3781B6F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Special Interest/{507A9AB2-A965-591B-A581-CA31E1D23BE7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Specialty Stores/{D2F79D29-6500-5361-B2AA-740239ADDEF1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Spirits/{612D13AF-9C05-54D7-A22F-DF9B75EE4810}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Sporting Goods/{9BA939CC-B4E0-5841-B07C-5FD992EB238F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Supplies/{C2261D21-D03A-51D6-82B1-48F3EBC4E557}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Technical/{18FFC437-9FB2-59E7-BE2C-C77A4CAA82F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Telephone/{8C8D336F-EAD7-5F42-BFD6-8644464F4F1C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Test  Measurement/{F4F1C796-6F22-59A2-9FED-AF0C53476618}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Textile Products/{8F66BCE2-5BA8-5A4B-8941-CEF34F4AB0C8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Tobacco/{0CBD3A9A-DE3F-52AD-A1CA-2F8C6ED52ED4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Tools/{F4BD0F64-5D60-502F-9100-9CC73C82AE4C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Toy  Hobby/{2773C5D0-9D1B-5595-B2D4-AF410A3D6D6D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Transmission/{557C050F-D9FB-5611-B75B-0486DE8017FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Trucking/{E7DD8D94-EB3C-5A77-B93D-6CC115D15C21}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Unclassified/{E342F80B-EBD0-5741-A074-538CFE4C4144}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Unions/{A37E3490-16D7-5759-A728-B08F9A58F44D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/University/{D46FC53B-4DC4-55B7-A152-8B5D82BA5686}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Vehicle Dealers/{72D45757-9C8D-5DC9-9EC5-F0C758176751}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Vending/{18F0EB83-7908-56B6-8845-0578BCF6AF6B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Vocational/{E49AA6F4-6CCC-5934-AF17-CB2AA3A4E141}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Warehousing/{F9E10B41-2BC6-5877-9E58-2E53D9CA44AA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Water/{626F210E-DC5D-5923-A3BC-84CFD0C6A0DE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Website Traffic Level/{ADAEC8F7-475F-5A6C-80CA-EFCCC2BD00F5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Website Traffic Level/High/{F85C4E46-397B-52A9-97C5-7299E247E709}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Website Traffic Level/Low/{FD2296D5-FA44-543D-A450-EEF9D5F98B5D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Website Traffic Level/Medium/{23F98164-56B7-5825-8B80-ED5C1582852C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Website Traffic Level/Very High/{CCF552DC-B928-5710-B216-AEFAC628C11A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Levels/{27D81862-4BC5-4EE7-AE05-D0DA7EED4D47}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Demandbase/Levels/Default/{4DB4624B-AE02-4361-B4DB-289796E5254C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/{062927F2-DF50-430D-A38A-B8C7624E7C01}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Account Owner/{76A29013-4C4F-5FB9-AD06-397B1E98B165}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Account Status/{2ECD5927-1AB6-5E93-8346-B569D2FDE1B1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Account Type/{A2DB7392-E20F-54DD-9B07-A2D3CA550299}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Ad Campaign Code/{33A03831-5553-5D1F-90D0-6C8722408168}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Audience Segment/{420DEA02-9CDB-526D-B007-AFA494D7B515}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Audience/{7EA61B0C-077E-5429-A6A3-16C6A59594A5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Default Boolean Type Condition/{3B796CF4-3614-5A96-A05E-C58BD2A67B62}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Default Integer Type Condition/{DA84B934-572D-5989-A6AA-D3B7E9B5B77C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Default String Type Condition/{C0B0A7AC-82C7-5261-AB66-3D2AD0DB67F4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Default Watch List Condition/{39D0B0FC-7186-4D80-8728-36B864674DE2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Employee Band/{120F2221-495B-5D92-9137-E231F8ABB2A9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Industry/{C687D2BE-63F0-5B9F-9D74-E52C1B9D75BE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Revenue Band/{13AFF4DD-310B-52B9-9155-FD2246E7F67A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Sub Industry/{874E18EA-CC9A-566D-8B66-EEA2FC4A7AB1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Tags/{A63D3BB8-237A-4047-A774-AE37D0EAEF78}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Tags/Default/{D2C4B5B3-55CD-4EA7-B22A-C4C99D6F2D72}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Visibility/{4FFDAD7B-BD68-4F03-B998-94CDCC80ECAD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Elements/demandbase/Website Traffic Level/{B9A02D25-39A4-5AEE-AD72-E10B242896BA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/demandbase/{7DA6339D-EFA7-43BF-B363-D67D327CDB01}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Definitions/Tags/demandbase/Visibility/{19F82081-6A4E-43EA-AC0C-DC0DC1DD19EC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/demandbase/{7DEFC9F4-885E-483D-8BCD-BE039ACFBBA4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/demandbase/Rules/{8D0B2577-F5F3-44E8-B869-6B9B9E7C7CDC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/demandbase/Tags/{ADF456FB-F6F6-4863-9DC1-5EE022C1F06A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/demandbase/Tags/Default/{78B6D3E5-9C41-47F7-AA21-69D88B2D1BF3}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

@@ -1,0 +1,22 @@
+﻿---
+ID: "7defc9f4-885e-483d-8bcd-be039acfbba4"
+Parent: "1057c235-c5c0-4eb7-8f77-ea51eb9e20ee"
+Template: "dda66314-03f3-4c89-84a9-39dffb235b06"
+Path: /sitecore/system/Settings/Rules/demandbase
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Demandbase
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161011T184046Z

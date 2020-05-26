@@ -1,0 +1,24 @@
+﻿---
+ID: "a61e08ea-6a79-5900-865f-88a9c5945bb1"
+Parent: "6903150e-b8d5-4298-a75e-3d4c3b05eb36"
+Template: "8457fe74-b99c-4148-9a80-05358875778f"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Attributes/String/City
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200415T154543Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "edfbde22-35f3-4938-8985-0d063e31be1a"
+      Hint: Id
+      Value: city
+    - ID: "f1d62003-f432-40ad-af13-fbd061299432"
+      Hint: Name
+      Value: City

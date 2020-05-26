@@ -1,0 +1,24 @@
+﻿---
+ID: "9c495d79-81ca-5d13-b000-027c0e025701"
+Parent: "78a98e78-0215-4031-a016-f275a8bcc123"
+Template: "8457fe74-b99c-4148-9a80-05358875778f"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Account Watch Attributes/Attributes/String/Account Status
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200415T154519Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "edfbde22-35f3-4938-8985-0d063e31be1a"
+      Hint: Id
+      Value: account_status
+    - ID: "f1d62003-f432-40ad-af13-fbd061299432"
+      Hint: Name
+      Value: Account Status

@@ -1,0 +1,21 @@
+﻿---
+ID: "bd9b4d2c-2675-5852-884e-3594ab5fd332"
+Parent: "bf3c45af-7131-5abc-968e-89f6024d5931"
+Template: "0117897e-28d7-4932-9402-6b71175cef11"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Sub Industry/Laboratories
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200415T154533Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "d8477e99-1ab3-4aeb-828f-2de82faa17ca"
+      Hint: Value
+      Value: Laboratories

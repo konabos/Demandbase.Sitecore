@@ -1,0 +1,22 @@
+﻿---
+ID: "78b6d3e5-9c41-47f7-aa21-69d88b2d1bf3"
+Parent: "adf456fb-f6f6-4863-9dc1-5ee022c1f06a"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: /sitecore/system/Settings/Rules/demandbase/Tags/Default
+DB: master
+SharedFields:
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Type: Multilist
+  Value: "{7DA6339D-EFA7-43BF-B363-D67D327CDB01}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161011T184046Z

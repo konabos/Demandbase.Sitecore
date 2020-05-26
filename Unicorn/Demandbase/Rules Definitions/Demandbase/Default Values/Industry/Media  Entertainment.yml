@@ -1,0 +1,21 @@
+﻿---
+ID: "bdd83c71-9d69-558e-ad90-39909fb030c8"
+Parent: "a9fb8f25-9d91-5ef8-9491-e7159db7ca50"
+Template: "0117897e-28d7-4932-9402-6b71175cef11"
+Path: /sitecore/system/Settings/Rules/Definitions/Demandbase/Default Values/Industry/Media  Entertainment
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200415T154524Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "d8477e99-1ab3-4aeb-828f-2de82faa17ca"
+      Hint: Value
+      Value: Media & Entertainment

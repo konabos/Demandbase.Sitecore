@@ -1,0 +1,18 @@
+﻿---
+ID: "8d0b2577-f5f3-44e8-b869-6b9b9e7c7cdc"
+Parent: "7defc9f4-885e-483d-8bcd-be039acfbba4"
+Template: "8ea2cf67-4250-47a2-aeca-4f70fd200dc7"
+Path: /sitecore/system/Settings/Rules/demandbase/Rules
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161011T184046Z

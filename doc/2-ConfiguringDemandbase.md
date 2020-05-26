@@ -26,7 +26,7 @@ There are a few configuration options available.  Many of which will never need 
 			<initialize>
 				<processor type="SitecoreDemandbase.Pipeline.Initialize.InitializeDemandbase, SitecoreDemandbase" >
 					<param name="restApi">http://api.demandbase.com/api/v2/ip.json</param>
-					<param name="key">Enter your demandbase key here</param>
+					<param name="key">Enter_your_demandbase_key_here</param>
 					<param name="demandbaseIp">4.16.87.224</param>
 					<!-- 
 						Uncomment following for session storage of demandbase data

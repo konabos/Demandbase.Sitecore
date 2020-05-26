@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//LogMeIn//GoToWebinar//EN
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200422T214432Z
+DTSTART;TZID=Europe/London:20200430T010000
+DTEND;TZID=Europe/London:20200501T005900
+SUMMARY:GoToWebinar - Global Virtual SUGCON 2020
+LOCATION:GoToWebinar - See conference call information below
+UID:-421606083@logmein.com
+ORGANIZER:community@sitecore.com
+DESCRIPTION:1. Click and join at the specified time and date:\nhttps://gl
+ obal.gotowebinar.com/join/6790167504346294541/130590518\nNote: This link
+  should not be shared with others\; it is unique to you.\n\n2. Choose on
+ e of the following audio options:\n\nTO USE YOUR COMPUTER'S AUDIO:\nWhen
+  the Webinar begins\, you will be connected to audio using your computer
+ 's microphone and speakers (VoIP). A headset is recommended.\n\n-- OR --
+ \n\nTO USE YOUR TELEPHONE:\nIf you prefer to use your phone\, you must s
+ elect "Use Telephone" after joining the webinar and call in using the nu
+ mbers below.\n\nUnited States (Toll-free): 1 877 309 2074\nUnited States
+ : +1 (213) 929-4221\n	Access Code: 419-987-495\n	Audio PIN: Shown after 
+ joining the webinar\n\nThe Sitecore User Group Conference (SUGCON) is no
+ w virtual only and will be delivering an all-star lineup of Sitecore exp
+ erts to wherever you are on Thursday\, April 30th.\n\nMore than 2000 Sit
+ ecore users from around the world are expected to dial in to be a part o
+ f the first-ever remote edition of SUGCON.\n\nThere will be 24 continuou
+ s hours of content\, hand-picked by the Sitecore User Group Committee to
+  bring to you the insights that matter most. This is a great opportunity
+  to get inspired and learn something new while working from home.\n\nGlo
+ bal Virtual SUGCON 2020 is a for-the-community\, by-the-community event 
+ that you can’t afford to miss! Make sure you share this moment.\n\nMore 
+ information: https://virtual.sugcon.events/\n
+X-ALT-DESC;FMTTYPE=text/html:<HTML><HEAD><TITLE></TITLE><BODY><FONT SIZE=
+ 2><b>1. Click and join at the specified time and date:</b></FONT><BR><FO
+ NT SIZE=2>https://global.gotowebinar.com/join/6790167504346294541/130590
+ 518</FONT><BR><FONT SIZE=2>Note: This link should not be shared with oth
+ ers\; it is unique to you.</FONT><BR><BR><FONT SIZE=2><FONT SIZE=2><b>2.
+  Choose one of the following audio options:</b></FONT><BR><BR><FONT SIZE
+ =2>TO USE YOUR COMPUTER'S AUDIO:</FONT><BR><FONT SIZE=2>When the Webinar
+  begins\, you will be connected to audio using your computer's microphon
+ e and speakers (VoIP). A headset is recommended.</FONT><BR><BR><FONT SIZ
+ E=2>-- OR --</FONT><BR><BR><FONT SIZE=2>TO USE YOUR TELEPHONE:</FONT><BR
+ ><FONT SIZE=2>If you prefer to use your phone\, you must select "Use Tel
+ ephone" after joining the webinar and call in using the numbers below.</
+ FONT><BR><BR><FONT SIZE=2>United States (Toll-free): 1 877 309 2074</FON
+ T><BR><FONT SIZE=2>United States: +1 (213) 929-4221</FONT><BR><FONT SIZE
+ =2>&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><FONT SIZE=2>Access Code: 419-987-
+ 495</FONT><BR><FONT SIZE=2>&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><FONT SIZE
+ =2>Audio PIN: Shown after joining the webinar</FONT><BR></BODY></HTML></
+ FONT><BR><FONT SIZE=2>The Sitecore User Group Conference (SUGCON) is now
+  virtual only and will be delivering an all-star lineup of Sitecore expe
+ rts to wherever you are on Thursday\, April 30th.\n\nMore than 2000 Site
+ core users from around the world are expected to dial in to be a part of
+  the first-ever remote edition of SUGCON.\n\nThere will be 24 continuous
+  hours of content\, hand-picked by the Sitecore User Group Committee to 
+ bring to you the insights that matter most. This is a great opportunity 
+ to get inspired and learn something new while working from home.\n\nGlob
+ al Virtual SUGCON 2020 is a for-the-community\, by-the-community event t
+ hat you can’t afford to miss! Make sure you share this moment.\n\nMore i
+ nformation: https://virtual.sugcon.events/</FONT><BR></BODY></HTML>
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
